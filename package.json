@@ -23,7 +23,7 @@
     "test:webauthn-connectors": "node --test scripts/webauthn-mobile-connector.test.mjs scripts/webauthn-connector.test.mjs && tsx --test scripts/webauthn-connector-headers.test.ts",
     "deploy": "wrangler deploy",
     "deploy:kv": "node scripts/ensure-kv.cjs && wrangler deploy -c wrangler.kv.toml",
-    "deploy:demo": "npm run build:demo && wrangler pages deploy dist --project-name nw-demo"
+    "deploy:demo": "bun run build:demo && wrangler pages deploy dist --project-name nw-demo"
   },
   "keywords": [
     "bitwarden",
