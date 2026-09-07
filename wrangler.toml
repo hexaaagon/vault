@@ -1,4 +1,4 @@
-name = "nodewarden"
+name = "vault"
 main = "src/index.ts"
 compatibility_date = "2024-01-01"
 
@@ -38,3 +38,8 @@ new_sqlite_classes = [ "NotificationsHub" ]
 [[migrations]]
 tag = "v2-backup-transfer-runner"
 new_sqlite_classes = [ "BackupTransferRunner" ]
+
+[observability.logs]
+enabled = true
+invocation_logs = true
+persist = true
